@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>dummy</groupId>
+  <artifactId>dummy</artifactId>
+  <version>0</version>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spec.url>https://api.swaggerhub.com/apis/iay/inc-validator/1.0.0</spec.url>
+    <gem.version>1.0.0</gem.version>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>io.swagger</groupId>
+        <artifactId>swagger-codegen-maven-plugin</artifactId>
+        <version>2.3.1</version>
+        <executions>
+          <execution>
+            <id>ruby</id>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+            <configuration>
+              <inputSpec>${spec.url}</inputSpec>
+              <language>ruby</language>
+              <output>${project.build.directory}/inc-validator-client-ruby</output>
+              <!-- Uncomment the following if (when) you forget the options. -->
+              <!-- <configHelp>true</configHelp> -->
+              <configOptions>
+                <gemName>inc-validator-client</gemName>
+                <gemVersion>${gem.version}</gemVersion>
+                <gemAuthor>Ian Young</gemAuthor>
+                <gemAuthorEmail>ian@iay.org.uk</gemAuthorEmail>
+                <gemLicense>Apache-2.0</gemLicense>
+                <moduleName>Validator</moduleName>
+              </configOptions>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
