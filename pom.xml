@@ -11,7 +11,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <spec.url>https://api.swaggerhub.com/apis/iay/inc-validator/1.0.0</spec.url>
-    <gem.version>1.0.0</gem.version>
+    <gem.version>1.0.1</gem.version>
   </properties>
 
   <build>
@@ -38,7 +38,7 @@
                 <gemAuthor>Ian Young</gemAuthor>
                 <gemAuthorEmail>ian@iay.org.uk</gemAuthorEmail>
                 <gemLicense>Apache-2.0</gemLicense>
-                <moduleName>Validator</moduleName>
+                <moduleName>ValidatorClient</moduleName>
               </configOptions>
             </configuration>
           </execution>
