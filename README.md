@@ -1,7 +1,7 @@
-# inc-validator-client-builder
+# Metadata Validator Web Service Client Builder
 
 This project automates building of the client libraries
-for the `inc-validator` micro-service.
+for the `md-validator` micro-service.
 
 To perform a simple build:
 
@@ -10,11 +10,11 @@ $ mvn clean compile
 ```
 
 For now, this only builds the source for a Ruby gem called
-`inc-validator-client`. In principle, we could add additional executions for
+`md-validator-client`. In principle, we could add additional executions for
 libraries in other languages.
 
-The generated code will appear in `target/inc-validator-client-ruby`, which is
-also the name of the GitLab repository the code gets pushed to.
+The generated code will appear in `target/md-validator-client-ruby`, which is
+also the name of the repository the code gets pushed to.
 
 ## Pushing Generated Source to a Repository
 
@@ -28,10 +28,10 @@ repositories.
 $ mvn clean
 $ ./prep-ruby
 $ mvn compile
-$ cd target/inc-validator-client-ruby
+$ cd target/md-validator-client-ruby
 $ git add --all .
 $ git commit -m "This is what is new"
-$ git push --set-upstream origin master
+$ git push --set-upstream origin main
 ```
 
 ## Build and Publish the Gem
@@ -40,8 +40,8 @@ Although I don't advise it, you _could_ build the gem and publish it to
 [RubyGems.org](https://rubygems.org) as follows:
 
 ```bash
-$ gem build inc-validator-client.gemspec
-$ gem push inc-validator-client-*.gem
+$ gem build md-validator-client.gemspec
+$ gem push md-validator-client-*.gem
 ```
 
 I think this is probably less than a great idea because the rest of the world

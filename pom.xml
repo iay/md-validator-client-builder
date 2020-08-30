@@ -10,7 +10,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <spec.url>https://api.swaggerhub.com/apis/iay/inc-validator/1.0.0</spec.url>
+    <spec.url>https://api.swaggerhub.com/apis/iay/md-validator/1.0.0</spec.url>
     <gem.version>1.0.1</gem.version>
   </properties>
 
@@ -29,11 +29,11 @@
             <configuration>
               <inputSpec>${spec.url}</inputSpec>
               <language>ruby</language>
-              <output>${project.build.directory}/inc-validator-client-ruby</output>
+              <output>${project.build.directory}/md-validator-client-ruby</output>
               <!-- Uncomment the following if (when) you forget the options. -->
               <!-- <configHelp>true</configHelp> -->
               <configOptions>
-                <gemName>inc-validator-client</gemName>
+                <gemName>md-validator-client</gemName>
                 <gemVersion>${gem.version}</gemVersion>
                 <gemAuthor>Ian Young</gemAuthor>
                 <gemAuthorEmail>ian@iay.org.uk</gemAuthorEmail>
