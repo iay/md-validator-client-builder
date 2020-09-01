@@ -36,15 +36,10 @@ $ git push --set-upstream origin main
 
 ## Build and Publish the Gem
 
-Although I don't advise it, you _could_ build the gem and publish it to
+The gem is built and published to
 [RubyGems.org](https://rubygems.org) as follows:
 
 ```bash
 $ gem build md-validator-client.gemspec
 $ gem push md-validator-client-*.gem
 ```
-
-I think this is probably less than a great idea because the rest of the world
-has no particular interest in generated API client libraries for an internal
-service. It's probably better to access the gem sources directly from its
-remote repository, or from a cloned copy of that.
