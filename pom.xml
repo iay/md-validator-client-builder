@@ -11,7 +11,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <spec.url>https://api.swaggerhub.com/apis/iay/md-validator/1.0.0</spec.url>
-    <gem.version>1.0.1</gem.version>
+    <gem.version>1.0.2</gem.version>
   </properties>
 
   <build>
@@ -19,7 +19,7 @@
       <plugin>
         <groupId>io.swagger</groupId>
         <artifactId>swagger-codegen-maven-plugin</artifactId>
-        <version>2.4.15</version>
+        <version>2.4.19</version>
         <executions>
           <execution>
             <id>ruby</id>
